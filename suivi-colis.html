@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi Colis</title>
+  <link rel="stylesheet" href="style-suivi-colis.css">
+  <!-- Chargement des SDK Firebase (version modulaire) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Suivi de Colis</h1>
+    <div class="tracking-box">
+      <input type="text" id="trackingNumber" placeholder="Entrez votre numéro de suivi">
+      <button id="trackButton">Suivre</button>
+    </div>
+    <div id="result"></div>
+  </div>
+  <!-- Notez l'attribut type="module" pour pouvoir utiliser les importations Firebase -->
+  <script type="module" src="script-suivi-colis.js"></script>
+</body>
+</html>

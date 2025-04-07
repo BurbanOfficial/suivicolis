@@ -1,0 +1,73 @@
+/* Style général */
+body {
+  background: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Conteneur principal */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titres et textes */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Zone de saisie du numéro de suivi */
+.tracking-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tracking-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.tracking-box input:focus {
+  border-color: #007bff;
+}
+
+.tracking-box button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s;
+}
+
+.tracking-box button:hover {
+  background: #0056b3;
+}
+
+/* Zone d'affichage du résultat */
+#result {
+  font-size: 18px;
+  color: #555;
+}
